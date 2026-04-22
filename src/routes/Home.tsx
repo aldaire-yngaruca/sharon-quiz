@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Bienvenida</h1>
+      <h1 className="title">Bienvenida pequeña saltamontes</h1>
       <div className="pacman-header">
         <div className="pacman"></div>
         <p className="text-message">

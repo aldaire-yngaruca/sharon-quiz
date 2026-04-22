@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "AvatarFont";
+  src:
+    url("../assets/font/Herculanum.woff2") format("woff2"),
+    url("../assets/font/Herculanum.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/images/avatar.jpg");
+  background-size: cover; /* ocupa toda la pantalla */
+  background-position: center; /* centrado */
+  background-repeat: no-repeat; /* no se repite */
+  background-attachment: fixed; /* efecto bonito tipo parallax */
+  height: 100vh;
+}
+
+.title {
+  font-family: "AvatarFont", serif;
+  font-size: 3rem;
+}
+h3,
+h1 {
+  font-family: "AvatarFont", serif;
+  text-align: center;
+}
+
+.text-message {
+  font-family: "AvatarFont", serif;
+  font-size: 16px;
+  max-width: 680px;
+  padding: 0 20px;
+}
+
+.container {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+button {
+  font-family: "AvatarFont", serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.button-router {
+  background-color: #ee7223;
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.card {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h2 {
+  font-family: "AvatarFont", serif;
+  color: white;
+}
+.card h2 {
+  color: black;
+}
+.options button {
+  font-family: "AvatarFont", serif;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  background: #715447;
+  color: #f9efe3;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  min-width: 180px;
+}
+
+.options button:hover {
+  background: #6e1700;
+}
+
+.result-img {
+  width: 200px;
+  margin-top: 20px;
+}
+.voucher {
+  font-family: "AvatarFont", serif;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px dashed #333;
+  font-weight: bold;
+}
+
+.button-next {
+  font-family: "AvatarFont", serif;
+  background: #f4c135;
+  margin-top: 20px;
+  padding: 10px 50px;
+}

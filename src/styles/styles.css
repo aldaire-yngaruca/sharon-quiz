@@ -119,3 +119,12 @@ h2 {
   margin-top: 20px;
   padding: 10px 50px;
 }
+
+/* MODAL  */
+.modal-input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border-color: #f4c135;
+}

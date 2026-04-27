@@ -1,16 +1,36 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./routes/Home";
 import Quiz from "./routes/Quiz";
+import { useState } from "react";
+import PasswordModal from "./components/ModalPassword";
 
-function App() {
+function AppWrapper() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pulga" element={<Quiz />} />
-      </Routes>
+      <App />
     </BrowserRouter>
   );
 }
 
-export default App;
+function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSuccess = () => {
+    setIsAuthenticated(true);
+    navigate("/");
+  };
+
+  if (!isAuthenticated) {
+    return <PasswordModal onSuccess={handleSuccess} />;
+  }
+
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/pulga" element={<Quiz />} />
+    </Routes>
+  );
+}
+
+export default AppWrapper;
